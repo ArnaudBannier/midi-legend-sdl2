@@ -1,0 +1,40 @@
+root = true
+
+[*.{c,cpp,h,hpp}]
+
+# Indentation
+indent_style = space
+indent_size = 4
+tab_width = 4
+
+# Charset and line endings
+charset = utf-8
+end_of_line = crlf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Visual Studio C++ conventions
+# https://learn.microsoft.com/en-us/visualstudio/ide/cpp-editorconfig-properties
+
+cpp_space_pointer_reference_alignment = left
+
+# Indentation
+cpp_indent_braces = false
+cpp_indent_case_contents = true
+cpp_indent_case_labels = false
+cpp_indent_namespace_contents = true
+
+# Brace placement: new_line/same_line/ignore
+cpp_new_line_before_open_brace_namespace = new_line
+cpp_new_line_before_open_brace_type = new_line
+cpp_new_line_before_open_brace_function = new_line
+cpp_new_line_before_open_brace_block = new_line
+cpp_new_line_before_else = true
+cpp_new_line_before_catch = true
+
+# Spaces
+cpp_space_after_keywords_in_control_flow_statements = true
+cpp_space_before_function_open_parenthesis = remove
+cpp_space_within_expression_parentheses = false
+cpp_space_within_parameter_list_parentheses = false
+cpp_space_between_empty_parameter_list_parentheses = false

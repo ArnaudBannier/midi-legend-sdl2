@@ -1,0 +1,7 @@
+
+# CMake build directory
+out/
+_out/
+build/
+
+.vs
