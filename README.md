@@ -29,7 +29,7 @@ The recommended way to build the project is:
 2. Open the folder in Visual Studio 2026. Visual Studio automatically detects CMake projects.
 3. Build and run the project from the IDE.
 
-### Building for linux
+## Building for linux
 
 Use the following commands to install project dependencies:
 ```
