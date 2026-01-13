@@ -29,6 +29,33 @@ The recommended way to build the project is:
 2. Open the folder in Visual Studio 2026. Visual Studio automatically detects CMake projects.
 3. Build and run the project from the IDE.
 
+### Building for linux
+
+Use the following commands to install project dependencies:
+```
+sudo apt install \
+  cmake \
+  libsdl2-dev \
+  libsdl2-image-dev \
+  libsdl2-mixer-dev \
+  libsdl2-ttf-dev
+```
+To create the project with CMake, run the following commands:
+```
+mkdir _build_linux _build_linux/debug
+cd _build_linux/debug
+cmake ../.. -DCMAKE_BUILD_TYPE=Debug
+```
+You can then compile the project from the `_build_linux/debug` folder with either of the following two commands:
+```
+cmake --build .
+cmake --build . --clean-first
+```
+Again from the `_build_linux/debug` folder, you can run the binary with the following line
+```
+./application/application
+```
+
 ## Third-party libraries used
 
 This project relies on the following libraries:
