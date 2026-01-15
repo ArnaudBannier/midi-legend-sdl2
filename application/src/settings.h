@@ -16,15 +16,20 @@
 
 //#define FHD
 //#define FULLSCREEN
+//#define EXPORT
 
-#if defined(_WIN32)
-#  define ASSET_PATH "../../../assets/" // Windows
-#elif defined(_WIN64)
-#  define ASSET_PATH "../../../assets/" // Windows
-#elif defined(__linux__)
-#  define ASSET_PATH "../../assets/" // Linux
-#elif defined(__unix__)
-#  define ASSET_PATH "../../assets/" // Unix
+#if defined(EXPORT)
+#  define ASSET_PATH "assets/"
+#else
+#  if defined(_WIN32)
+#    define ASSET_PATH "../../../assets/" // Windows
+#  elif defined(_WIN64)
+#    define ASSET_PATH "../../../assets/" // Windows
+#  elif defined(__linux__)
+#    define ASSET_PATH "../../assets/" // Linux
+#  elif defined(__unix__)
+#    define ASSET_PATH "../../assets/" // Unix
+#  endif
 #endif
 
 #define MAX_KEY_COUNT 5
