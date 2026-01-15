@@ -116,6 +116,8 @@ Track *Track_create(LevelScene *scene, char *filename)
         }
     }
 
+    fclose(file);
+
     return self;
 }
 
